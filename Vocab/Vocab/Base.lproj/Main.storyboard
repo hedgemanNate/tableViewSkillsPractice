@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Swift Vocab-->
         <scene sceneID="ogQ-Gn-M2Q">
             <objects>
                 <tableViewController id="i7q-UH-763" customClass="WordsTableViewController" customModule="Vocab" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="i7q-UH-763" id="qpi-Nv-1eo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="gRQ-P6-hsq"/>
+                    <navigationItem key="navigationItem" title="Swift Vocab" id="gRQ-P6-hsq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l67-Sn-14Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
