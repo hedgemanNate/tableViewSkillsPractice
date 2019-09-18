@@ -13,6 +13,7 @@
 		F6F93F9E2332456000B0CAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F93F9C2332456000B0CAC3 /* LaunchScreen.storyboard */; };
 		F6F93FA72332495900B0CAC3 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F93FA62332495900B0CAC3 /* WordsTableViewController.swift */; };
 		F6F93FAC2332499F00B0CAC3 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F93FAB2332499F00B0CAC3 /* DefinitionViewController.swift */; };
+		F6F93FAE23324D7500B0CAC3 /* VocabWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F93FAD23324D7500B0CAC3 /* VocabWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F6F93F9F2332456000B0CAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F93FA62332495900B0CAC3 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		F6F93FAB2332499F00B0CAC3 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		F6F93FAD23324D7500B0CAC3 /* VocabWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		F6F93FAA2332496800B0CAC3 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				F6F93FAD23324D7500B0CAC3 /* VocabWord.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F93F942332455F00B0CAC3 /* AppDelegate.swift in Sources */,
+				F6F93FAE23324D7500B0CAC3 /* VocabWord.swift in Sources */,
 				F6F93FAC2332499F00B0CAC3 /* DefinitionViewController.swift in Sources */,
 				F6F93FA72332495900B0CAC3 /* WordsTableViewController.swift in Sources */,
 			);
