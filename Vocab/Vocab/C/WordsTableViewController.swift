@@ -12,14 +12,18 @@ class WordsTableViewController: UITableViewController {
     
     //Properties
     var vocabWords: [VocabWord] = []
+    let word1 = VocabWord(word: "Free", definition: "No cost")
+    let word2 = VocabWord(word: "Ass Whooping", definition: "WHat happens when you are being a badass little kid")
+    let word3 = VocabWord(word: "Foo", definition: "The beganning of being a fighter")
+    let word4 = VocabWord(word: "Money", definition: "That thing that you don't have")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let word1 = VocabWord(word: "Free", definition: "No cost")
-        let word2 = VocabWord(word: "Ass Whooping", definition: "WHat happens when you are being a badass little kid")
-        let word3 = VocabWord(word: "Foo", definition: "The beganning of being a fighter")
-        let word4 = VocabWord(word: "Money", definition: "That thing that you don't have")
         
+        vocabWords.append(word1)
+        vocabWords.append(word2)
+        vocabWords.append(word3)
+        vocabWords.append(word4)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
