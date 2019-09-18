@@ -52,6 +52,9 @@ class WordsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDefineSegue" {
             guard let detailedVC = segue.destination as? DefinitionViewController else { return }
+            guard let index = tableView.indexPathForSelectedRow else { return }
+            
+            detailedVC.vocabWord = vocabWords[index.row]
         }
         
         // Get the new view controller using segue.destination.

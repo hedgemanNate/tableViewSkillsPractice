@@ -13,6 +13,7 @@ class DefinitionViewController: UIViewController {
     //Properties
     @IBOutlet weak var vocabLabel: UILabel!
     @IBOutlet weak var vocabTextView: UITextView!
+    var vocabWord: VocabWord?
     
 
     override func viewDidLoad() {
