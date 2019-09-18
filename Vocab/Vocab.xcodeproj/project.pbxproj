@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F6F93F942332455F00B0CAC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F93F932332455F00B0CAC3 /* AppDelegate.swift */; };
-		F6F93F962332455F00B0CAC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F93F952332455F00B0CAC3 /* ViewController.swift */; };
 		F6F93F992332455F00B0CAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F93F972332455F00B0CAC3 /* Main.storyboard */; };
 		F6F93F9B2332456000B0CAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F93F9A2332456000B0CAC3 /* Assets.xcassets */; };
 		F6F93F9E2332456000B0CAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F93F9C2332456000B0CAC3 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		F6F93F902332455F00B0CAC3 /* Vocab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F93F932332455F00B0CAC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6F93F952332455F00B0CAC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6F93F982332455F00B0CAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F93F9A2332456000B0CAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F93F9D2332456000B0CAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		F6F93F922332455F00B0CAC3 /* Vocab */ = {
 			isa = PBXGroup;
 			children = (
-				F6F93F932332455F00B0CAC3 /* AppDelegate.swift */,
-				F6F93F952332455F00B0CAC3 /* ViewController.swift */,
 				F6F93F972332455F00B0CAC3 /* Main.storyboard */,
-				F6F93F9A2332456000B0CAC3 /* Assets.xcassets */,
-				F6F93F9C2332456000B0CAC3 /* LaunchScreen.storyboard */,
-				F6F93F9F2332456000B0CAC3 /* Info.plist */,
+				F6F93FA5233248E400B0CAC3 /* Resources */,
 			);
 			path = Vocab;
+			sourceTree = "<group>";
+		};
+		F6F93FA5233248E400B0CAC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6F93F9C2332456000B0CAC3 /* LaunchScreen.storyboard */,
+				F6F93F932332455F00B0CAC3 /* AppDelegate.swift */,
+				F6F93F9A2332456000B0CAC3 /* Assets.xcassets */,
+				F6F93F9F2332456000B0CAC3 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F93F962332455F00B0CAC3 /* ViewController.swift in Sources */,
 				F6F93F942332455F00B0CAC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8492LT54LT;
-				INFOPLIST_FILE = Vocab/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vocab/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8492LT54LT;
-				INFOPLIST_FILE = Vocab/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Vocab/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
