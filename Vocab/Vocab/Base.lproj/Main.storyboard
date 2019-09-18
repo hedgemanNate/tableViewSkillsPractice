@@ -82,6 +82,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Njf-rU-mSo"/>
                     </view>
+                    <connections>
+                        <outlet property="vocabLabel" destination="3rp-MO-KFE" id="s9y-YH-7u9"/>
+                        <outlet property="vocabTextView" destination="2cQ-fc-y9e" id="oWc-87-UPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUB-Ch-u5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

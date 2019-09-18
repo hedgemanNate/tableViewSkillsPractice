@@ -9,6 +9,11 @@
 import UIKit
 
 class DefinitionViewController: UIViewController {
+    
+    //Properties
+    @IBOutlet weak var vocabLabel: UILabel!
+    @IBOutlet weak var vocabTextView: UITextView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
