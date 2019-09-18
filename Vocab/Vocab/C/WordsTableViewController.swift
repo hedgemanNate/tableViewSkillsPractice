@@ -13,7 +13,7 @@ class WordsTableViewController: UITableViewController {
     //Properties
     var vocabWords: [VocabWord] = []
     let word1 = VocabWord(word: "Free", definition: "No cost")
-    let word2 = VocabWord(word: "Ass Whooping", definition: "WHat happens when you are being a badass little kid")
+    let word2 = VocabWord(word: "Ass Whooping", definition: "What happens when you are being a badass little kid")
     let word3 = VocabWord(word: "Foo", definition: "The beganning of being a fighter")
     let word4 = VocabWord(word: "Money", definition: "That thing that you don't have")
     
