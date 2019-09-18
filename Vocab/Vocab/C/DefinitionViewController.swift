@@ -18,8 +18,16 @@ class DefinitionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateViews()
 
         // Do any additional setup after loading the view.
+    }
+    
+    //Functions
+    func updateViews() {
+        guard let vocabWord = vocabWord else { return NSLog("Error: No Vocab Word Passed By Segue") }
+        vocabLabel.text = vocabWord.word
+        vocabTextView.text = vocabWord.definition
     }
     
 
