@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct VocabWord {
+    
+    var word: String
+    var definition: String
+}
