@@ -9,6 +9,9 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
+    
+    //Properties
+    var vocabWords: [VocabWord] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
