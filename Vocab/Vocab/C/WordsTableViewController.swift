@@ -26,6 +26,10 @@ class WordsTableViewController: UITableViewController {
         vocabWords.append(word4)
     }
     
+    //My Functions
+    @IBAction func addVocabButton(_ sender: UIBarButtonItem) {
+    }
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
