@@ -19,7 +19,6 @@ class WordsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         vocabWords.append(word1)
         vocabWords.append(word2)
         vocabWords.append(word3)
@@ -28,6 +27,10 @@ class WordsTableViewController: UITableViewController {
     
     //My Functions
     @IBAction func addVocabButton(_ sender: UIBarButtonItem) {
+        let addVocabAlert = UIAlertController(title: "Add New Word", message: nil, preferredStyle: .alert)
+        addVocabAlert.addTextField()
+        addVocabAlert.addTextField()
+        
     }
     
     // MARK: - Table view data source
