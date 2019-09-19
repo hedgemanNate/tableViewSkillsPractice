@@ -30,7 +30,13 @@ class WordsTableViewController: UITableViewController {
         let addVocabAlert = UIAlertController(title: "Add New Word", message: nil, preferredStyle: .alert)
         addVocabAlert.addTextField()
         addVocabAlert.addTextField()
-        
+        addVocabAlert.textFields![0].placeholder = "The Word"
+        addVocabAlert.textFields![1].placeholder = "The Definition"
+        addVocabAlert.addAction(UIAlertAction(title: "Add", style: .default, handler: { (action) in
+            guard let word = addVocabAlert.textFields![0].text else { return }
+            guard let defintion = addVocabAlert.textFields![1].text else { return }
+            self.vocabWords.append(VocabWord(word: word, definition: defintion))
+        }))
     }
     
     // MARK: - Table view data source
