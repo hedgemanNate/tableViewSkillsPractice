@@ -32,12 +32,21 @@ class WordsTableViewController: UITableViewController {
         addVocabAlert.addTextField()
         addVocabAlert.textFields![0].placeholder = "The Word"
         addVocabAlert.textFields![1].placeholder = "The Definition"
-        addVocabAlert.addAction(UIAlertAction(title: "Add", style: .default, handler: { (action) in
+        addVocabAlert.addAction(UIAlertAction(title: "Add", style: .default, handler: { (add) in
             guard let word = addVocabAlert.textFields![0].text else { return }
             guard let defintion = addVocabAlert.textFields![1].text else { return }
             self.vocabWords.append(VocabWord(word: word, definition: defintion))
+            self.tableView.reloadData()
         }))
+        addVocabAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (cancel) in
+            addVocabAlert.dismiss(animated: true, completion: {
+            })
+        }))
+        
+        self.present(addVocabAlert, animated: true, completion: nil)
     }
+    
+    
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
