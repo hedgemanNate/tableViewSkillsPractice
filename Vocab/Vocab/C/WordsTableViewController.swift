@@ -26,6 +26,7 @@ class WordsTableViewController: UITableViewController {
     }
     
     //My Functions
+    //Adds A New Word With An Alert Controller
     @IBAction func addVocabButton(_ sender: UIBarButtonItem) {
         let addVocabAlert = UIAlertController(title: "Add New Word", message: nil, preferredStyle: .alert)
         addVocabAlert.addTextField()
@@ -45,8 +46,6 @@ class WordsTableViewController: UITableViewController {
         
         self.present(addVocabAlert, animated: true, completion: nil)
     }
-    
-    
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -74,6 +73,5 @@ class WordsTableViewController: UITableViewController {
         }
         
     }
-    
     
 }
